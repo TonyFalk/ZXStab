@@ -26,6 +26,7 @@ public class A {
                 }
                 if (a1 <= 2){
                     nextcheck = (nextcheck/3)*2;
+                    a1 = 0;
                     AC();
                 }
                 if (a1 == 3) {
