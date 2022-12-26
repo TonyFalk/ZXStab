@@ -41,7 +41,11 @@ public class C implements CommandExecutor {
                         U.mS(sender,"&aWORKERS-STATUS " + T.gM(3) + "&e/&a" + T.MW);
                         U.mS(sender, "&aMEMORY " + T.gM(0) + "&e/&a" + T.gM(1));
                         U.mS(sender,"&d==============================================");
+                    default:
+                        U.mS(sender,"&cWrong usage &a/" + cmd + "restart/sysinfo");
                 }
+            } else {
+                U.mS(sender,"&cWrong usage &a/" + cmd + "restart/sysinfo");
             }
         }
         return false;
