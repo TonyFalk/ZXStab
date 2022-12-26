@@ -1,0 +1,18 @@
+#
+# restart message is the message appears
+# before an restart
+# %IN% is PrerestartTime
+restartmessage: "&4Server Restarts in %IN%"
+#
+# pre re start time is in seconds
+# its the time server will wait to restart
+# after announcing that its overloaded
+#
+prerestarttime: 30
+#
+# Default check is in min
+# it will be the time when
+# system does a check if auto restart
+# is required!
+#
+defaultcheck: 3600

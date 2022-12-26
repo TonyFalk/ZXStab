@@ -1,0 +1,10 @@
+name: ZXStabilizer
+version: '${project.version}'
+main: zx.tonyfalk.Stabilizer
+api-version: 1.19
+authors: [ TonyFalk ]
+description: stabilizer tool
+website: fearteamplays@gmail.com
+commands:
+  zxstabilizer:
+    description: cmd
