@@ -9,27 +9,27 @@ public class A {
         this.plugin = plugin;
     }
     long nextcheck = this.plugin.getConfig().getLong("defaultcheck",3600);
-    int serverheath = 0;
+    int sh = 0;
 
     public void AC() {
         this.plugin.getServer().getScheduler().scheduleSyncDelayedTask(this.plugin,new Runnable() {
             public void run() {
                 double a1 = R.gT(600);
                 if (a1 < 16) {
-                    a1 = +1;
+                    sh = +1;
                 }
                 if ((T.gM(2) > T.gM(1)/4)){
-                    a1 = +1;
+                    sh = +1;
                 }
                 if ((T.gM(3) > T.MW/4)) {
-                    a1 = +1;
+                    sh = +1;
                 }
-                if (a1 <= 2){
+                if (sh <= 2){
                     nextcheck = (nextcheck/3)*2;
-                    a1 = 0;
+                    sh = 0;
                     AC();
                 }
-                if (a1 == 3) {
+                if (sh == 3) {
                     plugin.c.restart(plugin.getConfig().getInt("prerestarttime",30));
                 }
             }
